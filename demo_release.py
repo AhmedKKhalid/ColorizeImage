@@ -54,7 +54,7 @@ def hello_world():
 	buffered = BytesIO()
 	im.save(buffered, format="PNG")
 	img_str = base64.b64encode(buffered.getvalue())
-
+	#done
 
 	return jsonify(img_str)
 
