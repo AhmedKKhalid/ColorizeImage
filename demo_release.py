@@ -4,6 +4,7 @@ import base64
 import io
 
 import matplotlib.pyplot as plt
+from matplotlib import cm
 from numpy import asarray
 
 from colorizersDl import *
@@ -47,31 +48,14 @@ def hello_world():
 
 
 
-	# plt.subplot(2,2,2)
-	# plt.imshow(img_bw)
-	# plt.title('Input')
-	# plt.axis('off')
-	#
-	#
-	#
-	# plt.subplot(2,2,4)
-	# plt.imshow(out_img_siggraph17)
-	# plt.title('Output (SIGGRAPH 17)')
-	# plt.axis('off')
-	# plt.show()
-	# out_img_siggraph17 = np.clip(out_img_siggraph17, 0, 255).astype("uint8")
-	output_image = Image.fromarray(out_img_siggraph17, "RGB")
+
+	im = Image.fromarray(np.uint8(out_img_siggraph17 * 255))
+
 	buffered = BytesIO()
-	output_image.save(buffered, format="PNG")
-    #base64
-	img_str = base64.b64encode(buffered.getvalue()).decode()
+	im.save(buffered, format="PNG")
+	img_str = base64.b64encode(buffered.getvalue())
 
 
-	# buf = io.BytesIO(msg)
-	# img = Image.open(buf)
-	# plt.imshow(img)
-	# plt.show()
-	print(img_str)
 	return jsonify(img_str)
 
 if __name__ == "__main__":
