@@ -44,7 +44,6 @@ def hello_world():
 	img_bw = postprocess_tens(tens_l_orig, torch.cat((0*tens_l_orig,0*tens_l_orig),dim=1))
 	out_img_siggraph17 = postprocess_tens(tens_l_orig, colorizer_siggraph17(tens_l_rs).cpu())
 
-	plt.imsave('%s_siggraph17.png'%opt.save_prefix, out_img_siggraph17)
 
 
 
