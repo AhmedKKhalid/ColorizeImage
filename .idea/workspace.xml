@@ -21,10 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="170df1f2-7046-4d83-a4df-55b0d07501d9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorizersDl/base_color.py" beforeDir="false" afterPath="$PROJECT_DIR$/colorizersDl/base_color.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorizersDl/siggraph17.py" beforeDir="false" afterPath="$PROJECT_DIR$/colorizersDl/siggraph17.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorizersDl/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/colorizersDl/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_release.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo_release.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
