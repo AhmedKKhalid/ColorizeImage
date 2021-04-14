@@ -1,10 +1,7 @@
 
 import argparse
 import base64
-import io
 
-import matplotlib.pyplot as plt
-from matplotlib import cm
 from numpy import asarray
 
 from colorizersDl import *
