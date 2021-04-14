@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'colorizeIm'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_c79003ea50e0487cbbb711808094b8ae }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_eade38cff4cb40f68e12f99068a21518 }}
