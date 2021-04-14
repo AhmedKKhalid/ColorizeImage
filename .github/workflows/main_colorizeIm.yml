@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - colorize
+name: Build and deploy Python app to Azure Web App - colorizeIm
 
 on:
   push:
@@ -57,6 +57,6 @@ jobs:
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'colorize'
+          app-name: 'colorizeIm'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_272b62488a9f4b20ab76fd0e49bfdc7b }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_c79003ea50e0487cbbb711808094b8ae }}
